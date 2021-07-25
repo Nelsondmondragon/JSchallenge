@@ -7,12 +7,27 @@
     <title>Document</title>
 </head>
 <style>
-    p{
+    p::first-letter{
         color: red;
+        font-size: 20px;
+    }
+    p:first-child{
+        color: red;
+    }
+    p:last-child{
+        color:chartreuse;
+    }
+    p:nth-child(2n){
+        color: blueviolet;
+    }
+    p:nth-child(2n+1){
+        color: aqua;
     }
 </style>
 <body>
     <p>Hello world happy</p>
     <p>Hello world</p>
+    <p>Hello Nelson</p>
+    <p>Hello Gustavo</p>
 </body>
 </html>
