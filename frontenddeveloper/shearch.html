@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <title>Platzi Video</title>
+</head>
+<style>
+    body{
+        font-family: 'Mulish', sans-serif;
+        margin: 0;
+        background-color: #54436B;
+
+    }
+
+    header{
+        width: 100%;
+        height: 80px;
+        background-color: #003638;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__img{
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .header__menu{ 
+        margin-right: 40px;
+    } 
+
+    .header__menu--profile{
+        display: flex;
+        align-items: center;
+    }
+
+    .header__menu--profile img{
+        margin-right: 8px;
+        width: 40px;
+    }
+
+    .header__menu--profile p{
+        color: white;
+    }
+
+    .header__menu ul{
+        display: none;
+        list-style: none;
+        position: absolute;
+        width: 100px;
+        margin-top: -5px;
+    }
+    
+    .header__menu:hover ul,ul:hover{
+        display: block ;
+    }
+
+    .header__menu li{
+        margin: 10px 0px;
+    }
+
+    .header__menu li a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    .header__menu li a:hover{
+        text-decoration: underline;
+    }
+
+    .main{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__title{
+        color: white;
+        font-size: 25px;
+    }
+
+    .input{
+        background-color: rgba(255, 255, 255, 0.1 );
+        border: 2px solid palevioletred;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Mulish', sans-serif;
+        font-size: 16px;
+        height: 50px;
+        padding: 0 20px;
+        width: 70%;
+        outline: none;
+    }
+
+    ::placeholder{
+        color: white;
+    }
+    
+</style>
+<body>
+    <header class="header">
+        <img class="header__img" src=".\images\logo-platzi.png" alt="">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src=".\images\user-icon.png" alt="User">
+                <p>Profile</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="/">Acount</a></li>
+                    <li><a href="/">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class= "main">
+        <h2 class="main__title">What do you want to see today?</h2>
+        <input class="input" type="text" placeholder="Search...">
+    </section>
+</body>
+</html>
